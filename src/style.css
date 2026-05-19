@@ -341,6 +341,10 @@ button {
   text-decoration: none;
 }
 
+.nav-logo-icon {
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.25));
+}
+
 .nav-logo-text {
   display: flex;
   flex-direction: row;
@@ -756,6 +760,10 @@ button {
   flex-direction: column;
   align-items: center;
   gap: var(--sp-3);
+}
+
+.loader-logo img {
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
 }
 
 .loader-logo-text {

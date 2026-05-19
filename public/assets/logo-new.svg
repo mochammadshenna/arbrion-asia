@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 56" fill="none">
+  <!-- Shadow -->
+  <polygon points="8,48 72,28 30,6" fill="#111" opacity="0.12" transform="translate(2,2)"/>
+
+  <!-- GREEN — black stroke base -->
+  <polygon
+    points="6,48 74,28 26,4"
+    fill="#2E7D32"
+    stroke="#111"
+    stroke-width="2.5"
+    stroke-linejoin="round"
+  />
+  <!-- GREEN — white stroke on top -->
+  <polygon
+    points="6,48 74,28 26,4"
+    fill="none"
+    stroke="#fff"
+    stroke-width="0.5"
+    stroke-linejoin="round"
+  />
+
+  <!-- RED — black stroke base -->
+  <polygon
+    points="2,41 48,23 20,9"
+    fill="#C8262A"
+    stroke="#111"
+    stroke-width="2.5"
+    stroke-linejoin="round"
+  />
+  <!-- RED — white stroke on top -->
+  <polygon
+    points="2,41 48,23 20,9"
+    fill="none"
+    stroke="#fff"
+    stroke-width="0.5"
+    stroke-linejoin="round"
+  />
+</svg>
