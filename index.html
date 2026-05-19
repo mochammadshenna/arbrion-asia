@@ -16,7 +16,11 @@
   <title>PT. Arbrion Asia — Cable Tray &amp; Cable Ladder</title>
   <link rel="icon" type="image/svg+xml" href="/assets/arbrion-logo.svg" />
   <link rel="icon" type="image/png" sizes="256x256" href="/assets/favicon.png" />
-  <link rel="preload" href="/assets/hero/hero-1.jpg" as="image" />
+  <!-- Preload LCP image (WebP for modern browsers, JPG fallback) -->
+  <link rel="preload" href="/assets/hero-tray.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/assets/hero-tray.jpg" as="image" type="image/jpeg" media="not all and (min-resolution: 0.001dpcm)" />
+  <!-- DNS prefetch for external resources -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 </head>
 
 <body>
@@ -89,7 +93,10 @@
   <section id="hero">
     <div id="hero-grid" aria-hidden="true"></div>
     <div id="hero-bg" aria-hidden="true">
-      <img id="hero-bg-img" src="/assets/hero-tray.png" alt="" draggable="false" />
+      <picture>
+        <source srcset="/assets/hero-tray.webp" type="image/webp" />
+        <img id="hero-bg-img" src="/assets/hero-tray.jpg" alt="" draggable="false" fetchpriority="high" />
+      </picture>
     </div>
     <svg id="blueprint-svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"></svg>
 

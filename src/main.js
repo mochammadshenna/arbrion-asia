@@ -4,8 +4,8 @@ import {
   getLang, setLang, t, tMarketers, tDownloads,
   updateAllText, updateLangButtons, waLink
 } from './i18n/translations.js';
-import { initProductScene } from './scene/three-scenes.js';
 import { productSpecs, crossSectionSVGs } from './scene/product-data.js';
+
 
 // ─── BOOT ────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
@@ -64,7 +64,7 @@ function initNavbar() {
 }
 
 // ─── PAGE LOADER ─────────────────────────────────────────────
-// Returns a hide() function. Called externally once Three.js fires first frame.
+// Returns a hide() function. Called externally once hero image loads.
 function initPageLoader() {
   const loader = document.getElementById('page-loader');
   if (!loader) {
@@ -72,8 +72,9 @@ function initPageLoader() {
     return () => {};
   }
 
+  const isMob = window.innerWidth < 768;
   const start = Date.now();
-  const minDelay = 600; // ms minimum show time
+  const minDelay = isMob ? 300 : 600; // shorter on mobile
   let scheduled = false;
 
   const hide = () => {
@@ -93,8 +94,8 @@ function initPageLoader() {
     }, wait);
   };
 
-  // Absolute fallback: hide after 5s regardless
-  setTimeout(hide, 5000);
+  // Fallback: 3s on mobile, 5s on desktop
+  setTimeout(hide, isMob ? 3000 : 5000);
 
   return hide;
 }
@@ -554,9 +555,10 @@ document.addEventListener('DOMContentLoaded', initWhyCarousel);
     drawer.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
 
-      // 3D scene — lazy init once, then just load product
-      requestAnimationFrame(() => {
+      // 3D scene — dynamic import, load Three.js only on first drawer open
+      requestAnimationFrame(async () => {
         if (!drawerScene) {
+          const { initProductScene } = await import('./scene/three-scenes.js');
           drawerScene = initProductScene(drawerCanvas);
         }
         drawerScene.loadProduct(productId);
