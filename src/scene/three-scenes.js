@@ -827,13 +827,67 @@ export function initProductScene(canvas) {
     r.castShadow = true; r.receiveShadow = true;
     g.add(r);
 
-    // Rungs — evenly spaced, characteristic ladder look
+    // Rungs with holes — evenly spaced, characteristic ladder look
     const rungSpacing = 0.2; // 200mm standard
     const rungCount = Math.floor(length / rungSpacing) - 1;
+    const rungW = width - rungThick * 4;
+    const rungH = height * 0.55;
+    const rungD = rungThick * 2.5;
+
+    // Build rung shape with 3 rectangular holes using ExtrudeGeometry
+    // Shape drawn in X-Z plane (width x depth), then extruded in Y (height)
+    const holeW = rungW * 0.22;
+    const holeD = rungD * 0.55;
+    const holeOffX = rungW * 0.28;
+
+    function makeRungGeo() {
+      const shape = new THREE.Shape();
+      shape.moveTo(-rungW / 2, -rungD / 2);
+      shape.lineTo( rungW / 2, -rungD / 2);
+      shape.lineTo( rungW / 2,  rungD / 2);
+      shape.lineTo(-rungW / 2,  rungD / 2);
+      shape.closePath();
+
+      // Left hole
+      const holeL = new THREE.Path();
+      holeL.moveTo(-holeOffX - holeW / 2, -holeD / 2);
+      holeL.lineTo(-holeOffX + holeW / 2, -holeD / 2);
+      holeL.lineTo(-holeOffX + holeW / 2,  holeD / 2);
+      holeL.lineTo(-holeOffX - holeW / 2,  holeD / 2);
+      holeL.closePath();
+      shape.holes.push(holeL);
+
+      // Center hole
+      const holeC = new THREE.Path();
+      holeC.moveTo(-holeW / 2, -holeD / 2);
+      holeC.lineTo( holeW / 2, -holeD / 2);
+      holeC.lineTo( holeW / 2,  holeD / 2);
+      holeC.lineTo(-holeW / 2,  holeD / 2);
+      holeC.closePath();
+      shape.holes.push(holeC);
+
+      // Right hole
+      const holeR = new THREE.Path();
+      holeR.moveTo( holeOffX - holeW / 2, -holeD / 2);
+      holeR.lineTo( holeOffX + holeW / 2, -holeD / 2);
+      holeR.lineTo( holeOffX + holeW / 2,  holeD / 2);
+      holeR.lineTo( holeOffX - holeW / 2,  holeD / 2);
+      holeR.closePath();
+      shape.holes.push(holeR);
+
+      return new THREE.ExtrudeGeometry(shape, {
+        depth: rungH,
+        bevelEnabled: false
+      });
+    }
+
+    const rungGeo = makeRungGeo();
+
     for (let i = 0; i < rungCount; i++) {
-      const rungGeo = new THREE.BoxGeometry(width - rungThick * 4, height * 0.55, rungThick * 2.5);
       const rung = new THREE.Mesh(rungGeo, steelDarkMat);
-      rung.position.set(0, 0, -length / 2 + rungSpacing + i * rungSpacing);
+      // ExtrudeGeometry extrudes in Z; rotate so extrusion goes in Y
+      rung.rotation.x = -Math.PI / 2;
+      rung.position.set(0, -rungH / 2, -length / 2 + rungSpacing + i * rungSpacing);
       rung.castShadow = true;
       g.add(rung);
     }
