@@ -3,10 +3,7 @@ import { defineConfig, loadEnv } from 'vite';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   // Vercel injects VERCEL_URL (no protocol). Custom domain takes priority.
-  const domain = env.VITE_DOMAIN
-    || (env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${env.VERCEL_PROJECT_PRODUCTION_URL}` : null)
-    || (env.VERCEL_URL ? `https://${env.VERCEL_URL}` : null)
-    || 'https://arbrion-asia.vercel.app';
+  const domain = 'https://arbrion-asia.vercel.app';
 
   const ogImage = `${domain}/assets/about-factory.jpg`;
 
