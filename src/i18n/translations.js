@@ -172,7 +172,7 @@ export const translations = {
     contact_email_label: 'Email',
     contact_email_val: 'info@arbrion-asia.com',
     contact_hours_label: 'Jam Operasional',
-    contact_hours_val: 'Senin–Jumat 08:00–17:00 WIB',
+    contact_hours_val: 'Senin–Jumat 08:30–16:30 WIB',
     marketers_title: 'Tim Penjualan Langsung',
     wa_label: 'Chat WA',
     wa_region_jakarta: 'Marketing Jakarta',
