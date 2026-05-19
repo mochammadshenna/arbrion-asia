@@ -487,8 +487,8 @@ button {
 /* ─── HERO ───────────────────────────────────────────────── */
 #hero {
   position: relative;
-  height: 100vh;
-  min-height: 640px;
+  height: 100svh;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2519,7 +2519,7 @@ footer {
   /* ── Mobile hero: text at top, image watermark behind ── */
   #hero {
     height: auto;
-    min-height: 93svh;
+    min-height: 100svh;
     flex-direction: column;
     justify-content: flex-start;
     overflow: hidden;
@@ -2555,7 +2555,8 @@ footer {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    min-height: calc(93svh - var(--nav-h));
+    min-height: calc(100svh - var(--nav-h) - 64px);
+    padding-bottom: calc(var(--sp-7) + 64px);
   }
 
   .hero-title {
@@ -2977,7 +2978,7 @@ footer {
 }
 
 .footer-bnav-spacer {
-  height: 64px;
+  height: calc(64px + env(safe-area-inset-bottom));
 }
 
 @media (min-width: 769px) {
@@ -2990,7 +2991,7 @@ footer {
 #wa-sticky-bar {
   display: none;
   position: fixed;
-  bottom: calc(64px + var(--sp-4));
+  bottom: calc(64px + env(safe-area-inset-bottom) + var(--sp-4));
   right: var(--sp-5);
   z-index: 90;
   background: transparent;
@@ -3045,7 +3046,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 64px;
+  height: calc(64px + env(safe-area-inset-bottom));
   background: var(--color-ink);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   z-index: 100;
@@ -3081,7 +3082,7 @@ footer {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none;
-  padding: var(--sp-2) 0;
+  padding: var(--sp-2) 0 calc(var(--sp-2) + env(safe-area-inset-bottom) / 2);
   transition: color 160ms ease;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
