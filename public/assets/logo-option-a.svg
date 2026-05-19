@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Shadow/base -->
+  <polygon points="14,56 54,56 46,38 22,38" fill="#2a2a2a" opacity="0.22"/>
+  <!-- Red lower triangle (front, offset right-down) -->
+  <polygon points="18,54 56,54 56,20" fill="#C8262A" stroke="#111" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Purple upper triangle (back, offset left-up) -->
+  <polygon points="8,44 46,44 46,10" fill="#7B5EA7" stroke="#111" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Horizontal construction line (the "shelf" / cable tray reference) -->
+  <line x1="8" y1="44" x2="56" y2="44" stroke="#111" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Cable tray cross-section inside triangle -->
+  <defs>
+    <clipPath id="tray-mask">
+      <polygon points="32,5 61,59 3,59"/>
+    </clipPath>
+  </defs>
+  <!-- Triangle base — red -->
+  <polygon points="32,5 61,59 3,59" fill="#C8262A"/>
+  <!-- Three cable rungs clipped inside triangle — white horizontal bars -->
+  <rect x="3" y="24" width="58" height="5" fill="white" opacity="0.90" clip-path="url(#tray-mask)"/>
+  <rect x="3" y="36" width="58" height="5" fill="white" opacity="0.90" clip-path="url(#tray-mask)"/>
+  <rect x="3" y="48" width="58" height="5" fill="white" opacity="0.90" clip-path="url(#tray-mask)"/>
+  <!-- Outline -->
+  <polygon points="32,5 61,59 3,59" stroke="#8B1A1D" stroke-width="2" stroke-linejoin="round"/>
+</svg>

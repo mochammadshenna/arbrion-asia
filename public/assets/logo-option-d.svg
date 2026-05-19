@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Bold angular "A" letterform built from two stacked triangles -->
+  <!-- Left leg triangle (red) -->
+  <polygon points="4,58 24,10 32,30 14,58" fill="#C8262A"/>
+  <!-- Right leg triangle (deep navy) -->
+  <polygon points="60,58 40,10 32,30 50,58" fill="#1A2E6E"/>
+  <!-- Crossbar (the cable tray "shelf") — white rule -->
+  <rect x="18" y="37" width="28" height="5" fill="white"/>
+  <!-- Apex dot — accent red mark -->
+  <circle cx="32" cy="10" r="3" fill="#C8262A"/>
+</svg>

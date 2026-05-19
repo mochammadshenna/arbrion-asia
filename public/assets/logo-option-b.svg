@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Single bold triangle split diagonally: red left half, deep blue right half -->
+  <!-- Full triangle clipping path -->
+  <defs>
+    <clipPath id="tri">
+      <polygon points="32,6 60,58 4,58"/>
+    </clipPath>
+  </defs>
+  <!-- Left color fill -->
+  <rect x="4" y="6" width="28" height="52" clip-path="url(#tri)" fill="#C8262A"/>
+  <!-- Right color fill -->
+  <rect x="32" y="6" width="28" height="52" clip-path="url(#tri)" fill="#1A2E6E"/>
+  <!-- Triangle outline -->
+  <polygon points="32,6 60,58 4,58" stroke="#111" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- Diagonal split line -->
+  <line x1="32" y1="6" x2="32" y2="58" stroke="white" stroke-width="1.2" opacity="0.5"/>
+</svg>
