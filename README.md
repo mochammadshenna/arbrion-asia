@@ -166,7 +166,7 @@ The `dist/` folder is a fully static site — deploy to any static host:
 | Address | Jl. Bulan Raya No. 27B Mekarsari, Cimanggis — Depok, Jawa Barat |
 | Phone | 021 29374932 |
 | Fax | 021 29374931 |
-| Email | info@arbrion-asia.com |
+| Email | <info@arbrion-asia.com> |
 | Hours | Mon–Fri 08:00–17:00 WIB |
 
 **Sales Team**
@@ -174,7 +174,7 @@ The `dist/` folder is a fully static site — deploy to any static host:
 | Name | Role | WhatsApp |
 |---|---|---|
 | Dhaya | Marketing Jakarta | +62 858-1115-7844 |
-| Ady | Technical Sales | +62 881-1729-776 |
+| Addy | Technical Sales | +62 881-1729-776 |
 | Darmanto | Project Coordinator | +62 813-2576-8815 |
 
 ---

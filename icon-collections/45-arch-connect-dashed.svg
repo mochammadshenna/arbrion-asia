@@ -49,8 +49,5 @@
   <!-- Layer 3 — two lines with gradient fade -->
   <line x1="1" y1="12" x2="8" y2="15" stroke="url(#fade3-left)" stroke-width="1.5" stroke-linecap="round"/>
   <line x1="15" y1="12" x2="8" y2="15" stroke="url(#fade3-right)" stroke-width="1.5" stroke-linecap="round"/>
-  <!-- Dashed verticals: low opacity for subtle/blur feel -->
-  <line x1="0.5" y1="4" x2="0.5" y2="12" stroke="currentColor" stroke-width="0.3" stroke-dasharray="0.25,0.75" stroke-linecap="round" opacity="0.2"/>
-  <line x1="15.5" y1="4" x2="15.5" y2="12" stroke="currentColor" stroke-width="0.3" stroke-dasharray="0.25,0.75" stroke-linecap="round" opacity="0.2"/>
-  <!-- Gap layer2→layer3 is only 1px, no dash needed -->
+  <!-- Dashed verticals removed -->
 </svg>

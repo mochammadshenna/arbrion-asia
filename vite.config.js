@@ -3,9 +3,9 @@ import { defineConfig, loadEnv } from 'vite';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   // Vercel injects VERCEL_URL (no protocol). Custom domain takes priority.
-  const domain = 'https://arbrion-asia.vercel.app';
-
-  const ogImage = `${domain}/assets/about-factory.jpg`;
+  const domain = env.VITE_OG_URL || 'https://arbrion-asia.vercel.app';
+  const ogImage = env.VITE_OG_IMAGE || `${domain}/assets/about-factory.jpg`;
+  const waNumber = env.VITE_WA_NUMBER || '6281316337729';
 
   return {
     plugins: [
@@ -14,7 +14,8 @@ export default defineConfig(({ mode }) => {
         transformIndexHtml(html) {
           return html
             .replace(/%VITE_OG_IMAGE%/g, ogImage)
-            .replace(/%VITE_OG_URL%/g, domain);
+            .replace(/%VITE_OG_URL%/g, domain)
+            .replace(/%VITE_WA_NUMBER%/g, waNumber);
         },
       },
     ],

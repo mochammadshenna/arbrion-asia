@@ -179,7 +179,7 @@ export const translations = {
 
     marketers: [
       { name: 'Dhaya', role: 'Marketing Jakarta', wa: '6285811157844', waDisplay: '+62 858-1115-7844' },
-      { name: 'Ady', role: 'Marketing Jakarta', wa: '628811729776', waDisplay: '+62 881-1729-776' },
+      { name: 'Addy', role: 'Marketing Jakarta', wa: '628811729776', waDisplay: '+62 881-1729-776' },
       { name: 'Darmanto', role: 'Koordinator Proyek', wa: '6281325768815', waDisplay: '+62 813-2576-8815' },
     ],
 
@@ -200,7 +200,7 @@ export const translations = {
 
     // WhatsApp FAB
     wa_fab_label: 'Chat Kami',
-    wa_fab_number: '6285811157844',
+    wa_fab_number: '6281316337729',
     wa_sticky_text: 'Hubungi via WhatsApp',
 
     // Video section
@@ -369,7 +369,7 @@ export const translations = {
 
     marketers: [
       { name: 'Dhaya', role: 'Jakarta Marketing', wa: '6285811157844', waDisplay: '+62 858-1115-7844' },
-      { name: 'Ady', role: 'Technical Sales', wa: '628811729776', waDisplay: '+62 881-1729-776' },
+      { name: 'Addy', role: 'Technical Sales', wa: '628811729776', waDisplay: '+62 881-1729-776' },
       { name: 'Darmanto', role: 'Project Coordinator', wa: '6281325768815', waDisplay: '+62 813-2576-8815' },
     ],
 
@@ -388,7 +388,7 @@ export const translations = {
     maps_open_btn: 'Open in Google Maps',
 
     wa_fab_label: 'Chat Us',
-    wa_fab_number: '6285811157844',
+    wa_fab_number: '6281316337729',
     wa_sticky_text: 'WhatsApp Us Now',
 
     video_eyebrow: 'Explore Products',

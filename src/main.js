@@ -536,7 +536,7 @@ document.addEventListener('DOMContentLoaded', initWhyCarousel);
   function openDrawer(productId) {
     const spec = productSpecs[productId];
     drawerTitle.textContent = productNames[productId] || productId;
-    drawerWa.href = `https://wa.me/6285811157844?text=${waMessages[productId] || ''}`;
+    drawerWa.href = `https://wa.me/6281316337729?text=${waMessages[productId] || ''}`;
 
     // Spec table with stagger animation
     drawerTbody.innerHTML = '';
