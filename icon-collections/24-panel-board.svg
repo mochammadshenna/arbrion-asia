@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    Electrical Panel / Distribution Board — front face view.
+    Outer housing: rect x=1.5 y=1 w=13 h=14 rx=1. Centered.
+    Inner panel face: rect x=3 y=2.5 w=10 h=11 rx=0.5 (white cutout).
+    3 circuit breakers stacked vertically, centered:
+      Each breaker: w=4, h=2.5, rx=0.5. Center x=8 → x=6..10.
+      Top y=3.5, Mid y=7, Bottom y=10.5.
+    Breaker toggle nubs: rect w=1.5 h=1 centered on each breaker.
+  -->
+  <!-- Housing -->
+  <rect x="1.5" y="1" width="13" height="14" rx="1"/>
+  <!-- Face plate cutout -->
+  <rect x="3" y="2.5" width="10" height="11" rx="0.5" fill="white"/>
+  <!-- Breaker 1 -->
+  <rect x="6" y="3.5" width="4" height="2.5" rx="0.5"/>
+  <rect x="7.25" y="4" width="1.5" height="1" rx="0.25" fill="white"/>
+  <!-- Breaker 2 -->
+  <rect x="6" y="7" width="4" height="2.5" rx="0.5"/>
+  <rect x="7.25" y="7.5" width="1.5" height="1" rx="0.25" fill="white"/>
+  <!-- Breaker 3 -->
+  <rect x="6" y="10.5" width="4" height="2.5" rx="0.5"/>
+  <rect x="7.25" y="11" width="1.5" height="1" rx="0.25" fill="white"/>
+</svg>

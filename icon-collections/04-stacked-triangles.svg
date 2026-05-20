@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!-- Stacked Triangles: 3 solid upward triangles centered, ascending — growth -->
+  <!-- Bottom triangle (wide) -->
+  <polygon points="8,11 1.5,15 14.5,15" opacity="0.45"/>
+  <!-- Middle triangle -->
+  <polygon points="8,6.5 3.5,11 12.5,11" opacity="0.7"/>
+  <!-- Top triangle (narrow) -->
+  <polygon points="8,2 5.5,6.5 10.5,6.5" opacity="1"/>
+</svg>

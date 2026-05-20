@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!-- Agentic Pulse: 3 radiating rings from a center — signal, broadcast, action -->
+  <!-- Outer ring -->
+  <circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+  <!-- Middle ring -->
+  <circle cx="8" cy="8" r="4.5" fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.6"/>
+  <!-- Inner ring -->
+  <circle cx="8" cy="8" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.85"/>
+  <!-- Core agent dot -->
+  <circle cx="8" cy="8" r="1.2" opacity="1"/>
+</svg>

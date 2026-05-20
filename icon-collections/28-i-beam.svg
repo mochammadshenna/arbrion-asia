@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    I-Beam — structural cross-section.
+    Top flange: x=2..14, y=1.5..4. Web: x=6.75..9.25, y=4..12. Bottom flange: x=2..14, y=12..14.5.
+    Optically balanced: flanges h=2.5, web h=8, total=13 → 1.5 margin top+bottom.
+  -->
+  <!-- Top flange -->
+  <rect x="2" y="1.5" width="12" height="2.5" rx="0.5"/>
+  <!-- Web -->
+  <rect x="6.75" y="4" width="2.5" height="8"/>
+  <!-- Bottom flange -->
+  <rect x="2" y="12" width="12" height="2.5" rx="0.5"/>
+</svg>

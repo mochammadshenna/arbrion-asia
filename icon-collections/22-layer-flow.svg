@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    Layer Flow — 3 diamond layers with dashed vertical connectors between.
+    Layer half-w=6, half-h=1.25. Even vertical spacing.
+    Top:    center y=3.5  → (8,2.25)  (2,3.5)  (8,4.75)  (14,3.5)
+    Middle: center y=8    → (8,6.75)  (2,8)    (8,9.25)  (14,8)
+    Bottom: center y=12.5 → (8,11.25) (2,12.5) (8,13.75) (14,12.5)
+    Gap top→mid:    y=4.75 to y=6.75 = 2px. Dashed line at x=8 center.
+    Gap mid→bottom: y=9.25 to y=11.25 = 2px. Dashed line at x=8 center.
+    Dash segments: 0.6px dash 0.6px gap — small and tight.
+  -->
+  <!-- Top layer -->
+  <polygon points="8,2.25 2,3.5 8,4.75 14,3.5" opacity="1"/>
+  <!-- Dashed connector: top→mid -->
+  <line x1="8" y1="4.75" x2="8" y2="6.75"
+        stroke="currentColor" stroke-width="0.75" stroke-dasharray="0.6,0.6" opacity="0.65"/>
+  <!-- Middle layer -->
+  <polygon points="8,6.75 2,8 8,9.25 14,8" opacity="0.7"/>
+  <!-- Dashed connector: mid→bottom -->
+  <line x1="8" y1="9.25" x2="8" y2="11.25"
+        stroke="currentColor" stroke-width="0.75" stroke-dasharray="0.6,0.6" opacity="0.5"/>
+  <!-- Bottom layer -->
+  <polygon points="8,11.25 2,12.5 8,13.75 14,12.5" opacity="0.4"/>
+</svg>

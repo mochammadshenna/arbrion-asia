@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    Square Waveform — 2 full cycles, optically centered vertically.
+    Signal high y=3, low y=10, mid y=8.25 (baseline).
+    Cycle width=6px. Two cycles: x=1..7 and x=7..13. Tail x=13..15.
+    All rects pixel-snapped. Stroke-free — pure fill rectangles.
+    Vertical segments w=1.5. Horizontal segments h=1.5.
+  -->
+  <!-- Baseline lead-in -->
+  <rect x="1" y="8.25" width="1.5" height="1.5"/>
+  <!-- Cycle 1 rise -->
+  <rect x="2.5" y="3" width="1.5" height="6.75"/>
+  <!-- Cycle 1 high -->
+  <rect x="2.5" y="3" width="4" height="1.5"/>
+  <!-- Cycle 1 fall -->
+  <rect x="6" y="3" width="1.5" height="6.75"/>
+  <!-- Mid flat -->
+  <rect x="6" y="8.25" width="1.5" height="1.5"/>
+  <!-- Cycle 2 rise -->
+  <rect x="7.5" y="3" width="1.5" height="6.75" opacity="0.75"/>
+  <!-- Cycle 2 high -->
+  <rect x="7.5" y="3" width="4" height="1.5" opacity="0.75"/>
+  <!-- Cycle 2 fall -->
+  <rect x="11" y="3" width="1.5" height="6.75" opacity="0.75"/>
+  <!-- Tail -->
+  <rect x="11" y="8.25" width="4" height="1.5" opacity="0.75"/>
+</svg>

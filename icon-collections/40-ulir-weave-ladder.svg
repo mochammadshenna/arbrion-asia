@@ -1,0 +1,21 @@
+<svg width="160" height="120" viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Ulir Dayak: Cable Ladder Weave — Dayak textile weave pattern meets cable tray.
+    Interlocking V-shapes in horizontal bands, structural weave.
+    Philosophy: interlocked strength, every strand supports the whole.
+  -->
+  <g opacity="0.65">
+    <!-- Top band: interlocking V chevrons -->
+    <path d="M8 20 L32 4 L56 20 L80 4 L104 20 L128 4 L152 20" stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M8 20 L32 36 L56 20 L80 36 L104 20 L128 36 L152 20" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Inner band (smaller amplitude) -->
+    <path d="M8 60 L32 44 L56 60 L80 44 L104 60 L128 44 L152 60" stroke="#000000" stroke-miterlimit="10" opacity="0.55"/>
+    <path d="M8 60 L32 76 L56 60 L80 76 L104 60 L128 76 L152 60" stroke="#000000" stroke-miterlimit="10" opacity="0.55"/>
+    <!-- Bottom band -->
+    <path d="M8 100 L32 84 L56 100 L80 84 L104 100 L128 84 L152 100" stroke="#000000" stroke-miterlimit="10" opacity="0.35"/>
+    <path d="M8 100 L32 116 L56 100 L80 116 L104 100 L128 116 L152 100" stroke="#000000" stroke-miterlimit="10" opacity="0.35"/>
+    <!-- Vertical connectors at peaks -->
+    <path d="M32 4 L32 36 M80 4 L80 36 M128 4 L128 36" stroke="#000000" stroke-miterlimit="10" opacity="0.3"/>
+    <path d="M32 44 L32 76 M80 44 L80 76 M128 44 L128 76" stroke="#000000" stroke-miterlimit="10" opacity="0.25"/>
+  </g>
+</svg>

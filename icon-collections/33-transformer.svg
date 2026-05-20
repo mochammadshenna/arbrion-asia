@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    Transformer — two coil banks flanking a solid core.
+    Core: x=7..9 (w=2), y=1.5..14.5. Centered at x=8.
+    Left coils: x=1.5..7, 4 coils evenly spaced. Coil h=1.5, gap=1. Total span=4×1.5+3×1=9. Start y=2.
+    Right coils: x=9..14.5, 3 coils (step-down). Same h=1.5, gap=1.5. Start y=3.25 (optically centered).
+    All rx=0.75 for rounded coil ends.
+  -->
+  <!-- Core -->
+  <rect x="7" y="1.5" width="2" height="13"/>
+  <!-- Left coils (4) — primary winding -->
+  <rect x="1.5" y="2"   width="5.5" height="1.5" rx="0.75"/>
+  <rect x="1.5" y="5"   width="5.5" height="1.5" rx="0.75"/>
+  <rect x="1.5" y="8"   width="5.5" height="1.5" rx="0.75"/>
+  <rect x="1.5" y="11"  width="5.5" height="1.5" rx="0.75"/>
+  <!-- Right coils (3) — secondary winding, centered vertically -->
+  <rect x="9" y="3.5"  width="5.5" height="1.5" rx="0.75"/>
+  <rect x="9" y="7"    width="5.5" height="1.5" rx="0.75"/>
+  <rect x="9" y="10.5" width="5.5" height="1.5" rx="0.75"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    Circuit Node — horizontal bus trace, 3 ringed nodes evenly spaced.
+    Nodes at x=3, x=8, x=13. All cy=8. Outer r=2.5, inner white r=1.
+    Trace rect: y=7.25, h=1.5, x=3..13 (clipped by node fills naturally).
+    Vertical branch from center node upward: x=7.25..8.75, y=1..5.5.
+  -->
+  <!-- Bus trace -->
+  <rect x="3" y="7.25" width="10" height="1.5"/>
+  <!-- Node left -->
+  <circle cx="3" cy="8" r="2.5"/>
+  <circle cx="3" cy="8" r="1" fill="white"/>
+  <!-- Node center -->
+  <circle cx="8" cy="8" r="2.5"/>
+  <circle cx="8" cy="8" r="1" fill="white"/>
+  <!-- Node right -->
+  <circle cx="13" cy="8" r="2.5"/>
+  <circle cx="13" cy="8" r="1" fill="white"/>
+  <!-- Branch up from center -->
+  <rect x="7.25" y="1" width="1.5" height="5.5"/>
+</svg>

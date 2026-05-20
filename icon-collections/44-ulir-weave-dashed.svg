@@ -1,0 +1,27 @@
+<svg width="160" height="120" viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Ulir Dayak: Cable Ladder Weave with Connected Dashed Vertical Strikes.
+    Same weave geometry as 40-ulir-weave-ladder.svg.
+    Dashed verticals: ONE continuous line per column x=32, x=80, x=128
+    running full height y=4 to y=116 — connecting all 3 band boxes in each column.
+    This makes dashes chain seamlessly through top→mid→bottom band.
+    stroke-dasharray="3,3" uniform throughout.
+  -->
+  <g opacity="0.65">
+    <!-- Top band chevrons -->
+    <path d="M8,20 L32,4 L56,20 L80,4 L104,20 L128,4 L152,20" stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M8,20 L32,36 L56,20 L80,36 L104,20 L128,36 L152,20" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Mid band chevrons -->
+    <path d="M8,60 L32,44 L56,60 L80,44 L104,60 L128,44 L152,60" stroke="#000000" stroke-miterlimit="10" opacity="0.55"/>
+    <path d="M8,60 L32,76 L56,60 L80,76 L104,60 L128,76 L152,60" stroke="#000000" stroke-miterlimit="10" opacity="0.55"/>
+    <!-- Bottom band chevrons -->
+    <path d="M8,100 L32,84 L56,100 L80,84 L104,100 L128,84 L152,100" stroke="#000000" stroke-miterlimit="10" opacity="0.35"/>
+    <path d="M8,100 L32,116 L56,100 L80,116 L104,100 L128,116 L152,100" stroke="#000000" stroke-miterlimit="10" opacity="0.35"/>
+    <!-- Continuous dashed vertical — column x=32, y=4 to y=84 (layer1 + gap + layer2 + gap, stops at layer3 top) -->
+    <line x1="32" y1="4" x2="32" y2="84" stroke="#000000" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
+    <!-- Continuous dashed vertical — column x=80 -->
+    <line x1="80" y1="4" x2="80" y2="84" stroke="#000000" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
+    <!-- Continuous dashed vertical — column x=128 -->
+    <line x1="128" y1="4" x2="128" y2="84" stroke="#000000" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
+  </g>
+</svg>

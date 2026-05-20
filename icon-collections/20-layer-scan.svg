@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    Layer Scan — 3 diamond layers, horizontal dashed scan bar crosses middle layer.
+    Layer half-w=6.5, half-h=1.25. Centers at y=3.5, y=8, y=12.5.
+    Top:    (8,2.25)  (1.5,3.5)  (8,4.75)  (14.5,3.5)
+    Middle: (8,6.75)  (1.5,8)    (8,9.25)  (14.5,8)
+    Bottom: (8,11.25) (1.5,12.5) (8,13.75) (14.5,12.5)
+    Scan bar: full-width rect y=7.5, h=1, crossing mid-layer. Fills punch through.
+    Cursor: circle r=1.25 at (8,8) — sits on scan line center.
+    Scan bar rendered as filled rect (no stroke).
+  -->
+  <!-- Bottom layer -->
+  <polygon points="8,11.25 1.5,12.5 8,13.75 14.5,12.5" opacity="0.35"/>
+  <!-- Middle layer -->
+  <polygon points="8,6.75 1.5,8 8,9.25 14.5,8" opacity="0.65"/>
+  <!-- Top layer -->
+  <polygon points="8,2.25 1.5,3.5 8,4.75 14.5,3.5" opacity="1"/>
+  <!-- Scan bar (solid rect crossing middle layer) -->
+  <rect x="1" y="7.5" width="14" height="1" opacity="0.85"/>
+  <!-- Scan cursor node (punches over scan bar) -->
+  <circle cx="8" cy="8" r="1.5"/>
+  <!-- White center of cursor -->
+  <circle cx="8" cy="8" r="0.65" fill="white"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Ulir Dayak: Four-Point Star — 4-fold rotational motif, each arm bifurcates.
+    Same recursive V-fold as ulir__dayak8c. 4 arms, each splits into 2 at tip.
+    Philosophy: cardinal directions, energy radiating outward from core.
+  -->
+  <g opacity="0.7">
+    <!-- Core diamond -->
+    <path d="M70 50 L90 70 L70 90 L50 70 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Top arm + bifurcation -->
+    <path d="M70 50 L70 20 L54 36 L70 20 L86 36" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Bottom arm + bifurcation -->
+    <path d="M70 90 L70 120 L54 104 L70 120 L86 104" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Left arm + bifurcation -->
+    <path d="M50 70 L20 70 L36 54 L20 70 L36 86" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Right arm + bifurcation -->
+    <path d="M90 70 L120 70 L104 54 L120 70 L104 86" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Outer ring connector (optional elegance) -->
+    <path d="M54 36 L36 54 M86 36 L104 54 M36 86 L54 104 M104 86 L86 104" stroke="#000000" stroke-miterlimit="10" opacity="0.4"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Ulir Dayak: Shield Cross — Dayak ceremonial shield, cross-shaped with nested diamonds.
+    Central cross with diamond terminals, each diamond contains inner diamond.
+    Philosophy: protection, authority, structural integrity.
+  -->
+  <g opacity="0.7">
+    <!-- Vertical beam -->
+    <path d="M80 8 L80 152" stroke="#000000" stroke-miterlimit="10" opacity="0.3"/>
+    <!-- Horizontal beam -->
+    <path d="M8 80 L152 80" stroke="#000000" stroke-miterlimit="10" opacity="0.3"/>
+    <!-- Top terminal diamond -->
+    <path d="M80 10 L96 28 L80 46 L64 28 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M80 18 L90 28 L80 38 L70 28 Z" stroke="#000000" stroke-miterlimit="10" opacity="0.5"/>
+    <!-- Bottom terminal diamond -->
+    <path d="M80 114 L96 132 L80 150 L64 132 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M80 122 L90 132 L80 142 L70 132 Z" stroke="#000000" stroke-miterlimit="10" opacity="0.5"/>
+    <!-- Left terminal diamond -->
+    <path d="M10 80 L28 64 L46 80 L28 96 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M18 80 L28 70 L38 80 L28 90 Z" stroke="#000000" stroke-miterlimit="10" opacity="0.5"/>
+    <!-- Right terminal diamond -->
+    <path d="M114 80 L132 64 L150 80 L132 96 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M122 80 L132 70 L142 80 L132 90 Z" stroke="#000000" stroke-miterlimit="10" opacity="0.5"/>
+    <!-- Center diamond -->
+    <path d="M80 60 L100 80 L80 100 L60 80 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M80 68 L92 80 L80 92 L68 80 Z" stroke="#000000" stroke-miterlimit="10" opacity="0.5"/>
+  </g>
+</svg>

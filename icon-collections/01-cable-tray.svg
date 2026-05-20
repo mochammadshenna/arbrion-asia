@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!-- Cable Tray: U-channel with ladder rungs viewed from front -->
+  <!-- Left rail -->
+  <rect x="1.5" y="3" width="2" height="10" opacity="1"/>
+  <!-- Right rail -->
+  <rect x="12.5" y="3" width="2" height="10" opacity="1"/>
+  <!-- Top flange -->
+  <rect x="1.5" y="3" width="13" height="2" opacity="1"/>
+  <!-- Rung 1 -->
+  <rect x="3.5" y="6.5" width="9" height="1.5" opacity="0.75"/>
+  <!-- Rung 2 -->
+  <rect x="3.5" y="9.5" width="9" height="1.5" opacity="0.55"/>
+</svg>

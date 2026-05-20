@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    Agentic Loop — 3 diamonds in equilateral triangle formation, dashed connectors.
+    Triangle centers: top=(8,3.5), bottom-left=(3.5,11.5), bottom-right=(12.5,11.5).
+    Diamond half-w=2, half-h=1.5.
+    A: (8,2)   (6,3.5) (8,5)   (10,3.5)
+    B: (3.5,10)(1.5,11.5)(3.5,13)(5.5,11.5)
+    C: (12.5,10)(10.5,11.5)(12.5,13)(14.5,11.5)
+    Connectors (edge-to-edge):
+      A→B: from (6,3.5) to (1.5,11.5)  — left tip of A to left tip of B
+      B→C: from (5.5,11.5) to (10.5,11.5) — right tip of B to left tip of C
+      C→A: from (14.5,11.5) to (10,3.5) — right tip of C to right tip of A
+  -->
+  <!-- Diamond A (top, full opacity) -->
+  <polygon points="8,2 6,3.5 8,5 10,3.5" opacity="1"/>
+  <!-- Diamond B (bottom-left) -->
+  <polygon points="3.5,10 1.5,11.5 3.5,13 5.5,11.5" opacity="0.7"/>
+  <!-- Diamond C (bottom-right) -->
+  <polygon points="12.5,10 10.5,11.5 12.5,13 14.5,11.5" opacity="0.45"/>
+  <!-- Dashed A→B -->
+  <line x1="6" y1="3.5" x2="1.5" y2="11.5"
+        stroke="currentColor" stroke-width="0.75" stroke-dasharray="0.7,0.7" opacity="0.6"/>
+  <!-- Dashed B→C -->
+  <line x1="5.5" y1="11.5" x2="10.5" y2="11.5"
+        stroke="currentColor" stroke-width="0.75" stroke-dasharray="0.7,0.7" opacity="0.5"/>
+  <!-- Dashed C→A -->
+  <line x1="14.5" y1="11.5" x2="10" y2="3.5"
+        stroke="currentColor" stroke-width="0.75" stroke-dasharray="0.7,0.7" opacity="0.4"/>
+</svg>

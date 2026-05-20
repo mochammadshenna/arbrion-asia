@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!-- 3-layer stacked diamond — activity bar icon (monochrome, VS Code colors it) -->
+  <!-- Layer 3 (bottom) -->
+  <polygon points="8,9.5 1.5,12.5 8,15.5 14.5,12.5" opacity="0.55"/>
+  <!-- Layer 2 (middle) -->
+  <polygon points="8,5.5 1.5,8.5 8,11.5 14.5,8.5" opacity="0.75"/>
+  <!-- Layer 1 (top) -->
+  <polygon points="8,1.5 1.5,4.5 8,7.5 14.5,4.5"/>
+</svg>

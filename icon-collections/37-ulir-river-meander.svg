@@ -1,0 +1,27 @@
+<svg width="200" height="120" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Ulir Dayak: River Meander — 3 enclosed diamond/rhombus boxes formed by crossing chevrons.
+    Each "box" = a full enclosed rhombus made from upper V + lower V meeting.
+    3 boxes centered at x=40, x=100, x=160. Each half-w=30, half-h=40.
+    Box 1: top=(40,20) right=(70,60) bottom=(40,100) left=(10,60)  — outer diamond
+           inner: top=(40,34) right=(58,60) bottom=(40,86) left=(22,60)
+    Box 2: top=(100,20) right=(130,60) bottom=(100,100) left=(70,60)
+           inner: top=(100,34) right=(118,60) bottom=(100,86) left=(82,60)
+    Box 3: top=(160,20) right=(190,60) bottom=(160,100) left=(130,60)
+           inner: top=(160,34) right=(178,60) bottom=(160,86) left=(142,60)
+    Boxes share side points — continuous woven path.
+    Center spine: horizontal line through all midpoints y=60.
+  -->
+  <g opacity="0.65">
+    <!-- Outer meander path (continuous upper chevrons) -->
+    <path d="M10,60 L40,20 L70,60 L100,20 L130,60 L160,20 L190,60" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Outer meander path (continuous lower chevrons) -->
+    <path d="M10,60 L40,100 L70,60 L100,100 L130,60 L160,100 L190,60" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Inner meander upper (smaller amplitude) -->
+    <path d="M10,60 L40,36 L70,60 L100,36 L130,60 L160,36 L190,60" stroke="#000000" stroke-miterlimit="10" opacity="0.5"/>
+    <!-- Inner meander lower -->
+    <path d="M10,60 L40,84 L70,60 L100,84 L130,60 L160,84 L190,60" stroke="#000000" stroke-miterlimit="10" opacity="0.5"/>
+    <!-- Horizontal spine -->
+    <path d="M10,60 L190,60" stroke="#000000" stroke-miterlimit="10" opacity="0.2"/>
+  </g>
+</svg>

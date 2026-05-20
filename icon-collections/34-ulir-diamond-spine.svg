@@ -1,0 +1,30 @@
+<svg width="120" height="160" viewBox="0 0 120 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Ulir Dayak: Diamond Spine — 3 nested diamonds chained vertically.
+    Canvas: 120×160. Centers at y=30, y=84, y=138. Each diamond: half-w=28, half-h=28.
+    Diamond 1: (60,2)  (88,30)  (60,58)  (32,30)   inner half=16: (60,14)(76,30)(60,46)(44,30)
+    Diamond 2: (60,56) (88,84)  (60,112) (32,84)   inner half=16: (60,68)(76,84)(60,100)(44,84)
+    Diamond 3: (60,110)(88,138) (60,166→158) — compress: half=22
+    Diamond 3: center y=136, half=22: (60,114)(82,136)(60,158)(38,136) inner half=12: (60,124)(72,136)(60,148)(48,136)
+    Spine connectors: D1 bottom (60,58) → D2 top (60,56): 2px gap
+    D2 bottom (60,112) → D3 top (60,114): 2px gap
+  -->
+  <g opacity="0.7">
+    <!-- Diamond 1 outer -->
+    <path d="M60,2 L88,30 L60,58 L32,30 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Diamond 1 inner -->
+    <path d="M60,14 L76,30 L60,46 L44,30 Z" stroke="#000000" stroke-miterlimit="10" opacity="0.5"/>
+    <!-- Spine 1→2 -->
+    <path d="M60,58 L60,60" stroke="#000000" stroke-miterlimit="10" opacity="0.4"/>
+    <!-- Diamond 2 outer -->
+    <path d="M60,60 L88,88 L60,116 L32,88 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Diamond 2 inner -->
+    <path d="M60,72 L76,88 L60,104 L44,88 Z" stroke="#000000" stroke-miterlimit="10" opacity="0.5"/>
+    <!-- Spine 2→3 -->
+    <path d="M60,116 L60,118" stroke="#000000" stroke-miterlimit="10" opacity="0.4"/>
+    <!-- Diamond 3 outer (smaller, fits canvas) -->
+    <path d="M60,118 L82,138 L60,158 L38,138 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Diamond 3 inner -->
+    <path d="M60,128 L72,138 L60,148 L48,138 Z" stroke="#000000" stroke-miterlimit="10" opacity="0.5"/>
+  </g>
+</svg>

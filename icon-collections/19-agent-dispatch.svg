@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    Agent Dispatch — hub dispatches to 3 agents. Pure fill, no stroke.
+    Hub: circle r=2 at (8,7). Agents as filled circles r=1.5.
+    Agent positions (equidistant r=5.5 from hub):
+      Top:         (8, 1.5)
+      Bottom-left: (8 - 5.5×sin60, 7 + 5.5×cos60) = (8-4.76, 7+2.75) = (3.24, 9.75) → (3.25, 9.75)
+      Bottom-right:(8 + 4.76, 9.75) = (12.75, 9.75)
+    Connector rects (filled rectangles as lines, w=1.5px):
+      Hub top edge: (8, 5). Agent bottom: (8, 3). → vertical rect x=7.25, y=3, h=2.
+      Hub to BL: vector from (8,7) to (3.25,9.75). Render as thin polygon.
+      Hub to BR: mirror.
+    Use filled rect approach for top, polygon strips for diagonals.
+  -->
+  <!-- Hub -->
+  <circle cx="8" cy="7" r="2"/>
+  <!-- Agent top -->
+  <circle cx="8" cy="1.75" r="1.5" opacity="0.9"/>
+  <!-- Connector hub→top: rect x=7.25, y=3.25, h=1.75 -->
+  <rect x="7.25" y="3.25" width="1.5" height="1.75" opacity="0.8"/>
+  <!-- Agent bottom-left -->
+  <circle cx="3.25" cy="12" r="1.5" opacity="0.6"/>
+  <!-- Connector hub→BL: thin parallelogram -->
+  <polygon points="7,8.5 6.25,9.5 3.75,12 4.5,11" opacity="0.55"/>
+  <!-- Agent bottom-right -->
+  <circle cx="12.75" cy="12" r="1.5" opacity="0.45"/>
+  <!-- Connector hub→BR -->
+  <polygon points="9,8.5 9.75,9.5 12.25,12 11.5,11" opacity="0.4"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    Layer Lift — 3 diamond layers, top one elevated with dashed gap connectors.
+    Layer dims: half-width=6.5, half-height=1.25. Centers at y=13, y=9, y=5.
+    Bottom:  cx=8 cy=13 → points (8,11.75) (1.5,13) (8,14.25) (14.5,13)
+    Middle:  cx=8 cy=9  → points (8,7.75)  (1.5,9)  (8,10.25) (14.5,9)
+    Top:     cx=8 cy=5  → points (8,3.75)  (1.5,5)  (8,6.25)  (14.5,5)
+    Gap between top-bottom and middle-top: y=6.25 to y=7.75 = 1.5px gap.
+    Dashed lines at x=1.5 and x=14.5 from y=6.25 to y=7.75.
+  -->
+  <!-- Bottom layer -->
+  <polygon points="8,11.75 1.5,13 8,14.25 14.5,13" opacity="0.45"/>
+  <!-- Middle layer -->
+  <polygon points="8,7.75 1.5,9 8,10.25 14.5,9" opacity="0.7"/>
+  <!-- Dashed gap connectors (left and right tips of top→middle) -->
+  <line x1="1.5" y1="6.25" x2="1.5" y2="7.75"
+        stroke="currentColor" stroke-width="0.75" stroke-dasharray="0.6,0.6" opacity="0.6"/>
+  <line x1="14.5" y1="6.25" x2="14.5" y2="7.75"
+        stroke="currentColor" stroke-width="0.75" stroke-dasharray="0.6,0.6" opacity="0.6"/>
+  <!-- Top layer (lifted) -->
+  <polygon points="8,3.75 1.5,5 8,6.25 14.5,5" opacity="1"/>
+</svg>

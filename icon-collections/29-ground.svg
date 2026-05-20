@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    Ground Symbol — electrical earth. Perfectly centered x=8.
+    Conductor: x=7.25..8.75, y=1..6.5.
+    Bar 1: x=2..14 (w=12) y=6.5, h=1.5. Centered.
+    Bar 2: x=4..12 (w=8) y=9.5, h=1.5. Centered.
+    Bar 3: x=6..10 (w=4) y=12.5, h=1.5. Centered.
+    Spacing between bars: 1.5px gap each.
+  -->
+  <!-- Conductor -->
+  <rect x="7.25" y="1" width="1.5" height="5.5"/>
+  <!-- Bar 1 (widest) -->
+  <rect x="2" y="6.5" width="12" height="1.5" rx="0.75"/>
+  <!-- Bar 2 (medium) -->
+  <rect x="4" y="9.5" width="8" height="1.5" rx="0.75"/>
+  <!-- Bar 3 (narrowest) -->
+  <rect x="6" y="12.5" width="4" height="1.5" rx="0.75"/>
+</svg>

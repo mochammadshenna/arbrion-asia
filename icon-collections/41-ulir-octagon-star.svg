@@ -1,0 +1,23 @@
+<svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Ulir Dayak: Nested Octagon Star — Dayak mandala, 8-pointed nested star.
+    Three nested rotated squares creating an 8-point star.
+    Philosophy: wholeness, precision, cosmic order.
+  -->
+  <g opacity="0.65">
+    <!-- Outer square -->
+    <path d="M70 10 L130 70 L70 130 L10 70 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Outer square rotated 45° (making 8-point) -->
+    <path d="M30 30 L110 30 L110 110 L30 110 Z" stroke="#000000" stroke-miterlimit="10" opacity="0.5"/>
+    <!-- Mid diamond -->
+    <path d="M70 28 L112 70 L70 112 L28 70 Z" stroke="#000000" stroke-miterlimit="10" opacity="0.75"/>
+    <!-- Mid square rotated -->
+    <path d="M42 42 L98 42 L98 98 L42 98 Z" stroke="#000000" stroke-miterlimit="10" opacity="0.4"/>
+    <!-- Inner diamond -->
+    <path d="M70 46 L94 70 L70 94 L46 70 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Inner square rotated -->
+    <path d="M55 55 L85 55 L85 85 L55 85 Z" stroke="#000000" stroke-miterlimit="10" opacity="0.4"/>
+    <!-- Core point -->
+    <path d="M70 60 L80 70 L70 80 L60 70 Z" stroke="#000000" stroke-miterlimit="10"/>
+  </g>
+</svg>

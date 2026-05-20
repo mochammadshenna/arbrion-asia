@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    Hex Bolt — top-down view. Regular hexagon centered at (8,8).
+    Outer hex: circumradius=7, flat-to-flat=6.06. Points computed for flat-top orientation.
+    cx=8 cy=8. Vertices at angles 30,90,150,210,270,330 degrees × r=7:
+      (8+7cos30, 8-7sin30)=(14.06,4.5) → round to (14,4.5)
+      (8+7cos90, 8-7sin90)=(8,1)
+      (8+7cos150,8-7sin150)=(2,4.5)
+      (8+7cos210,8-7sin210)=(2,11.5)
+      (8+7cos270,8-7sin270)=(8,15)
+      (8+7cos330,8-7sin330)=(14,11.5)
+    Inner socket hex r=3.5:
+      (8+3.5cos30,8-3.5sin30)=(11,6.25)→(11,6.25)
+      (8,4.5) (5,6.25) (5,9.75) (8,11.5) (11,9.75)
+  -->
+  <!-- Outer hex -->
+  <polygon points="8,1 14,4.5 14,11.5 8,15 2,11.5 2,4.5"/>
+  <!-- Inner socket cutout -->
+  <polygon points="8,4.5 11,6.25 11,9.75 8,11.5 5,9.75 5,6.25" fill="white"/>
+</svg>

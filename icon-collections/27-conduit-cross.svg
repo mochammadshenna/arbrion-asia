@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    Conduit Cross — T-junction pipe, not symmetric cross (more interesting).
+    Horizontal pipe: y=6.5..9.5, full width x=1..15. rx=1.5 caps.
+    Vertical pipe: x=6.5..9.5, y=1..9.5 (feeds into top of horizontal).
+    Junction is seamless — rects overlap cleanly.
+  -->
+  <!-- Horizontal pipe -->
+  <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+  <!-- Vertical pipe (top-entry only — T shape) -->
+  <rect x="6.5" y="1" width="3" height="6"/>
+  <!-- Cap top of vertical -->
+  <rect x="6.5" y="1" width="3" height="1.5" rx="1.5"/>
+</svg>

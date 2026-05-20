@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    Cable Reel — spool face view. All strokes use fill shapes (no stroke attr).
+    Outer ring: r=6.5 cx=8 cy=8. Rim width=1.5 → inner r=5.
+    Hub r=2. Spokes: 4 rectangles w=1.5, h=3, rotated via points.
+    White cutouts punch through the fill.
+  -->
+  <!-- Outer disc -->
+  <circle cx="8" cy="8" r="6.5"/>
+  <!-- White ring cutout (annular gap) -->
+  <circle cx="8" cy="8" r="5" fill="white"/>
+  <!-- Rim is now just the outer 1.5px ring — spokes reconnect hub -->
+  <!-- Spoke top -->
+  <rect x="7.25" y="3" width="1.5" height="5"/>
+  <!-- Spoke bottom -->
+  <rect x="7.25" y="8" width="1.5" height="5"/>
+  <!-- Spoke left -->
+  <rect x="3" y="7.25" width="5" height="1.5"/>
+  <!-- Spoke right -->
+  <rect x="8" y="7.25" width="5" height="1.5"/>
+  <!-- Hub -->
+  <circle cx="8" cy="8" r="2"/>
+  <!-- Hub hole -->
+  <circle cx="8" cy="8" r="0.9" fill="white"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!-- Layered Arch: 3 solid arch bands — bridge spans, structure -->
+  <!-- Bottom arch band -->
+  <path d="M1.5,14.5 Q8,8 14.5,14.5 Q8,9.5 1.5,14.5 Z" opacity="0.45"/>
+  <!-- Middle arch band -->
+  <path d="M1.5,10.5 Q8,4 14.5,10.5 Q8,5.5 1.5,10.5 Z" opacity="0.7"/>
+  <!-- Top arch band -->
+  <path d="M1.5,6.5 Q8,0 14.5,6.5 Q8,1.5 1.5,6.5 Z" opacity="1"/>
+</svg>

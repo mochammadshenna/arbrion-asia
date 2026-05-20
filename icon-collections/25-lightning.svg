@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    Lightning Bolt — single clean polygon, optically centered
+    Bounds: x 4..12, y 1..15. Midpoint notch at x=8.5,y=8.5 / x=6.5,y=8.5
+    Top-right to bottom-left diagonal flow. Classic bolt shape.
+  -->
+  <polygon points="10,1 4.5,9 7.5,9 6,15 11.5,7 8.5,7"/>
+</svg>

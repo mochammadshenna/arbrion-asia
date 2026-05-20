@@ -1,0 +1,22 @@
+<svg width="160" height="120" viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Ulir Dayak: Hornbill Wings — bilateral wing spread, Dayak hornbill motif.
+    Two mirrored V-bifurcations from center, each with nested inner form.
+    Philosophy: reach, expansion, protection — hornbill is sacred in Dayak culture.
+  -->
+  <g opacity="0.65">
+    <!-- Center diamond -->
+    <path d="M80 48 L96 60 L80 72 L64 60 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Left wing outer -->
+    <path d="M64 60 L32 36 L8 60 L32 84 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Left wing inner -->
+    <path d="M64 60 L40 44 L24 60 L40 76 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Right wing outer -->
+    <path d="M96 60 L128 36 L152 60 L128 84 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Right wing inner -->
+    <path d="M96 60 L120 44 L136 60 L120 76 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Center vertical axis marks -->
+    <path d="M80 12 L80 48" stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M80 72 L80 108" stroke="#000000" stroke-miterlimit="10"/>
+  </g>
+</svg>

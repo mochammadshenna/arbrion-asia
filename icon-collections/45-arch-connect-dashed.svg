@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+  <defs>
+    <!-- Gradient: solid at top corner, transparent at nadir (8,7) -->
+    <linearGradient id="fade-left" x1="1" y1="4" x2="8" y2="7" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="currentColor" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="fade-right" x1="15" y1="4" x2="8" y2="7" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="currentColor" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.05"/>
+    </linearGradient>
+    <!-- Layer 2 gradients -->
+    <linearGradient id="fade2-left" x1="1" y1="8" x2="8" y2="11" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="currentColor" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="fade2-right" x1="15" y1="8" x2="8" y2="11" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="currentColor" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.05"/>
+    </linearGradient>
+    <!-- Layer 3 gradients -->
+    <linearGradient id="fade3-left" x1="1" y1="12" x2="8" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="currentColor" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="fade3-right" x1="15" y1="12" x2="8" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="currentColor" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <!-- Layer 1 — top two sides: solid -->
+  <path d="M1,4 L8,1 L15,4"
+        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"
+        stroke-linecap="round" fill="none" opacity="1"/>
+  <!-- Layer 1 — bottom two sides: gradient fade to transparent at nadir -->
+  <line x1="1" y1="4" x2="8" y2="7"
+        stroke="url(#fade-left)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="15" y1="4" x2="8" y2="7"
+        stroke="url(#fade-right)" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Layer 2 — two lines with gradient fade -->
+  <line x1="1" y1="8" x2="8" y2="11" stroke="url(#fade2-left)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="15" y1="8" x2="8" y2="11" stroke="url(#fade2-right)" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Layer 3 — two lines with gradient fade -->
+  <line x1="1" y1="12" x2="8" y2="15" stroke="url(#fade3-left)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="15" y1="12" x2="8" y2="15" stroke="url(#fade3-right)" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Dashed verticals: low opacity for subtle/blur feel -->
+  <line x1="0.5" y1="4" x2="0.5" y2="12" stroke="currentColor" stroke-width="0.3" stroke-dasharray="0.25,0.75" stroke-linecap="round" opacity="0.2"/>
+  <line x1="15.5" y1="4" x2="15.5" y2="12" stroke="currentColor" stroke-width="0.3" stroke-dasharray="0.25,0.75" stroke-linecap="round" opacity="0.2"/>
+  <!-- Gap layer2→layer3 is only 1px, no dash needed -->
+</svg>

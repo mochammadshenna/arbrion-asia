@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!--
+    Layer Merge — 3 sources converge to center point, output flows down.
+    All sources point toward convergence at (8,8).
+    Left source:  trapezoid  (1.5,3) (4.5,3) (8,8) — triangle, left
+    Right source: triangle   (11.5,3)(14.5,3)(8,8) — triangle, right
+    Top source:   triangle   (5,1)   (11,1)  (8,8) — triangle, top
+    Convergence node: circle r=1.5 at (8,8)
+    Output: rect centered x=8, y=9.5..14.5, w=1.5
+    Sources symmetric: left base x=1.5..4.5, right base x=11.5..14.5, top base x=5..11.
+  -->
+  <!-- Top triangle -->
+  <polygon points="5,1.5 11,1.5 8,7.5" opacity="1"/>
+  <!-- Left triangle -->
+  <polygon points="1.5,4.5 1.5,8.5 8,7.5" opacity="0.7"/>
+  <!-- Right triangle -->
+  <polygon points="14.5,4.5 14.5,8.5 8,7.5" opacity="0.45"/>
+  <!-- Convergence node -->
+  <circle cx="8" cy="8" r="1.5"/>
+  <!-- Output shaft -->
+  <rect x="7.25" y="9.5" width="1.5" height="5" rx="0.75"/>
+</svg>

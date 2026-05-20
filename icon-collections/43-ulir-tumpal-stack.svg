@@ -1,0 +1,36 @@
+<svg width="120" height="160" viewBox="0 0 120 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Ulir Dayak: Tumpal Stack — 3 upward-pointing isoceles triangles stacked vertically.
+    Dayak tumpal always points UP. Canvas 120×160.
+    Triangle 1 (bottom, largest):  base y=152, apex y=110. base x=10..110. center x=60.
+    Triangle 1 inner: base y=152, apex y=128. base x=28..92.
+    Triangle 2 (mid):              base y=106, apex y=68.  base x=18..102.
+    Triangle 2 inner: base y=106, apex y=84.  base x=34..86.
+    Spine connector: apex T1 (60,110) → base T2 (60,106). 4px.
+    Triangle 3 (top, smallest):    base y=64,  apex y=30.  base x=26..94.
+    Triangle 3 inner: base y=64,  apex y=46.  base x=40..80.
+    Spine connector: apex T2 (60,68) → base T3 (60,64). 4px.
+    Peak diamond: center (60,20), half-w=12, half-h=10: (60,10)(72,20)(60,30)(48,20).
+    Connector peak→T3: (60,30)→(60,30) — apex T3=y30, diamond bottom=y30. Seamless.
+  -->
+  <g opacity="0.7">
+    <!-- Triangle 1 outer (largest, bottom) — points UP -->
+    <path d="M60,110 L10,152 L110,152 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Triangle 1 inner -->
+    <path d="M60,128 L28,152 L92,152 Z" stroke="#000000" stroke-miterlimit="10" opacity="0.5"/>
+    <!-- Spine T1→T2 -->
+    <path d="M60,110 L60,106" stroke="#000000" stroke-miterlimit="10" opacity="0.4"/>
+    <!-- Triangle 2 outer (mid) — points UP -->
+    <path d="M60,68 L18,106 L102,106 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Triangle 2 inner -->
+    <path d="M60,84 L34,106 L86,106 Z" stroke="#000000" stroke-miterlimit="10" opacity="0.5"/>
+    <!-- Spine T2→T3 -->
+    <path d="M60,68 L60,64" stroke="#000000" stroke-miterlimit="10" opacity="0.4"/>
+    <!-- Triangle 3 outer (top, smallest) — points UP -->
+    <path d="M60,30 L26,64 L94,64 Z" stroke="#000000" stroke-miterlimit="10"/>
+    <!-- Triangle 3 inner -->
+    <path d="M60,46 L40,64 L80,64 Z" stroke="#000000" stroke-miterlimit="10" opacity="0.5"/>
+    <!-- Peak diamond terminal (top) -->
+    <path d="M60,10 L72,20 L60,30 L48,20 Z" stroke="#000000" stroke-miterlimit="10"/>
+  </g>
+</svg>
