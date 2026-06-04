@@ -2529,12 +2529,12 @@ footer {
   #hero-bg-img {
     position: absolute;
     top: auto;
-    bottom: 30%;
-    right: -30%;
+    bottom: 15%;
+    right: 10%;
     width: 95%;
     transform: none;
     animation: none;
-    opacity: 0;
+    /* opacity: 0; */
     pointer-events: none;
   }
 

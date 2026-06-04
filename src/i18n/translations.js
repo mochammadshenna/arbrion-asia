@@ -33,7 +33,7 @@ export const translations = {
     hero_line1: 'Dirancang',
     hero_line2: 'Menopang',
     hero_line3: 'Asia.',
-    hero_tagline: 'Cable tray, cable ladder, dan konduit berkualitas tinggi — untuk infrastruktur Indonesia yang kokoh dan tahan lama.',
+    hero_tagline: 'Cable tray, Cable ladder, Conduit steel, Tiang PJU dan Box Panel yang berkualitas tinggi untuk menunjang pembangunan industri, konstruksi  dan infrastruktur yang bermutu dan tahan lama.',
     hero_cta: 'Lihat Produk',
     hero_cta_wa: 'Hubungi via WhatsApp',
     scroll_label: 'Gulir',
@@ -52,8 +52,8 @@ export const translations = {
 
     // About
     about_eyebrow: '01 — Tentang Kami',
-    about_title: 'Dibangun di\nAtas Presisi.',
-    about_body: 'Kami adalah perusahaan swasta yang bergerak di bidang sistem penopang kabel, menyediakan berbagai jenis cable tray dan cable ladder. PT. Arbrion Asia didirikan pada tahun 2007 dengan motivasi dan keyakinan untuk berpartisipasi secara elegan dan profesional dalam pembangunan nasional di bidang konstruksi dan telekomunikasi.',
+    about_title: 'Di Bangun atas Komitmen dan Kualitas',
+    about_body: 'Kami adalah perusahaan swasta yang bergerak di bidang sistem penopang kabel, menyediakan berbagai jenis Cable tray, Cable ladder, Conduit steel, Tiang PJU dan Box Panel. PT. Arbrion Asia didirikan pada tahun 2007 dengan motivasi dan keyakinan untuk berpartisipasi secara elegan dan profesional dalam pembangunan nasional di bidang konstruksi dan telekomunikasi.',
     about_body2: 'Dengan semua sumber daya yang terus dikembangkan, didukung peralatan yang selalu mengikuti perkembangan terkini, serta budaya dan etos kerja profesional, PT. Arbrion Asia siap membantu menyelesaikan semua masalah yang dihadapi dengan pelayanan terbaik.',
     about_cta: 'Profil Perusahaan',
     about_founded: 'Berdiri',
