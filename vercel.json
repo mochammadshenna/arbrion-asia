@@ -1,14 +1,12 @@
 {
-  "redirects": [
+  "rewrites": [
     {
       "source": "/webmail",
-      "destination": "https://webmail.hostinger.com",
-      "permanent": false
+      "destination": "https://webmail.hostinger.com"
     },
     {
-      "source": "/webmail(.*)",
-      "destination": "https://webmail.hostinger.com$1",
-      "permanent": false
+      "source": "/webmail/(.*)",
+      "destination": "https://webmail.hostinger.com/$1"
     }
   ]
 }
